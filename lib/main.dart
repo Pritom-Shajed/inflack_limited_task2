@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           fillColor: AppColor.textFieldColor,
         ),
       ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
