@@ -4,6 +4,5 @@ abstract class Respository {
   Future<List<ApiModel>> fetchApi();
   Future<String> postApi(String title, String body);
   Future<String> deleteApi(ApiModel apiModel);
-  Future<String> patchApi(ApiModel apiModel, String title, String body);
   Future<String> putApi(ApiModel apiModel, String title, String body);
 }

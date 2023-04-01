@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:inflack_limited_task2/Utils/dimensions.dart';
 
 class CustomTextField extends StatelessWidget {
-  String hintText;
+  final String hintText;
+  final String labelText;
   TextInputType inputType;
   bool obscureText;
   int? maxLines;
@@ -13,7 +14,7 @@ class CustomTextField extends StatelessWidget {
       required this.hintText,
       this.inputType = TextInputType.text,
       this.obscureText = false,
-      this.maxLines, required this.controller})
+      this.maxLines, required this.controller, required this.labelText})
       : super(key: key);
 
   @override
@@ -24,6 +25,7 @@ class CustomTextField extends StatelessWidget {
       keyboardType: inputType,
       maxLines: maxLines,
       decoration: InputDecoration(
+        labelText: labelText,
         hintText: hintText,
         enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.transparent),

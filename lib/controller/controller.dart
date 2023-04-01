@@ -18,9 +18,6 @@ class Controller {
     return _repository.deleteApi(apiModel);
   }
 
-  Future<String> patchApi(ApiModel apiModel, String title, String body){
-    return _repository.patchApi(apiModel, title, body);
-  }
 
   Future<String> putApi(ApiModel apiModel, String title, String body){
     return _repository.putApi(apiModel, title, body);

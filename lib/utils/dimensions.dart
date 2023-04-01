@@ -5,7 +5,7 @@ class Dimensions {
   static double screenHeight = Get.height;
   static double screenWidth = Get.width;
 
-  static double buttonWidth = screenWidth/3;
+  static double buttonWidth = screenWidth/4;
 
   static double radius8 = screenHeight/102;
 

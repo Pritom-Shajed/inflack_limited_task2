@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 
 class ApiRepository implements Respository {
 
-  //get
+  //GET
   @override
   Future<List<ApiModel>> fetchApi() async {
     List<ApiModel> apiList = [];
@@ -32,7 +32,7 @@ class ApiRepository implements Respository {
     }
   }
 
-  //post
+  //POST
   @override
   Future<String> postApi(title, body) async {
     final uri = Uri.parse(ApiUrl.postUrl);
@@ -65,7 +65,7 @@ class ApiRepository implements Respository {
     }
   }
 
-  //delete
+  //DELETE
   @override
   Future<String> deleteApi(ApiModel apiModel) async {
     final uri = Uri.parse(ApiUrl.deleteUrl + apiModel.id.toString());
@@ -85,37 +85,8 @@ class ApiRepository implements Respository {
     }
   }
 
-  //patch
-  @override
-  Future<String> patchApi(ApiModel apiModel, String title, String body) async {
-    final uri = Uri.parse(ApiUrl.pathUrl + apiModel.id.toString());
 
-    var data = {
-      'title': title,
-      'body': body,
-    };
-
-    http.Response response = await http.patch(uri,
-        body: jsonEncode(data),
-        headers: {'Content-Type': 'application/json; charset=UTF-8'});
-
-    print(response.body);
-
-    try {
-      switch (response.statusCode) {
-        case 200:
-          print('Successful');
-          return 'success';
-        default:
-          print('Error');
-          return 'error';
-      }
-    } catch (e) {
-      throw Exception(e.toString());
-    }
-  }
-
-  //put
+  //UPDATE - PUT
   @override
   Future<String> putApi(ApiModel apiModel, String title, String body) async {
     final uri = Uri.parse(ApiUrl.pathUrl + apiModel.id.toString());
