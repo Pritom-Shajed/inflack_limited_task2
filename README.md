@@ -4,6 +4,6 @@ INFLACK LIMITED TASK 2
 
 API CRUD - https://jsonplaceholder.typicode.com/posts
 
-GET and POST are done at Home Page using future builder(get) and floating action button(post).
+GET is done at Home Page using future builder..
 
-UPDATE and DELETE are done in separate pages.
+POST, UPDATE and DELETE are done in separate pages, but all the buttons are added to home page.
