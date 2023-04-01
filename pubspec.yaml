@@ -1,5 +1,5 @@
 name: inflack_limited_task2
-description: A new Flutter project.
+description: task 2
 
 publish_to: 'none'
 
@@ -14,7 +14,6 @@ dependencies:
   get: ^4.6.5
   http: ^0.13.5
   fluttertoast: ^8.2.1
-
   cupertino_icons: ^1.0.2
 
 dev_dependencies:

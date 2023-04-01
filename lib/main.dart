@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:inflack_limited_task2/Utils/colors.dart';
-import 'package:inflack_limited_task2/View/home_page.dart';
+import 'package:inflack_limited_task2/view/home_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +13,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Task 2',
       theme: ThemeData(
         useMaterial3: true,
         primarySwatch: Colors.blue,
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           fillColor: AppColor.textFieldColor,
         ),
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
