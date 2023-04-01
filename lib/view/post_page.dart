@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:inflack_limited_task2/Utils/Dimensions.dart';
 import 'package:inflack_limited_task2/Widgets/custom_button.dart';

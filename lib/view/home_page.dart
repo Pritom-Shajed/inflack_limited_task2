@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:inflack_limited_task2/Utils/Dimensions.dart';
-import 'package:inflack_limited_task2/Widgets/custom_button.dart';
 import 'package:inflack_limited_task2/controller/controller.dart';
 import 'package:get/get.dart';
 import 'package:inflack_limited_task2/repository/api_respository.dart';
 import 'package:inflack_limited_task2/view/update_page.dart';
 import 'package:inflack_limited_task2/view/post_page.dart';
-import 'package:inflack_limited_task2/widgets/combined_text.dart';
 import 'package:inflack_limited_task2/widgets/custom_card.dart';
 
 class HomePage extends StatelessWidget {
