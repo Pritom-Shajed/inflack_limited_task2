@@ -22,51 +22,54 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        child: Row(
+        child: Padding(
+          padding: EdgeInsets.all(Dimensions.radius10),
+          child: Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          '$id',
-          style: const TextStyle(fontSize: 24),
-        ),
-        SizedBox(
-          width: Dimensions.height10,
-        ),
-        Expanded(
-          flex: 2,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CombinedText(
-                text1: 'Title: ',
-                text2: title,
-              ),
-              CombinedText(
-                text1: 'Body: ',
-                text2: body,
-              ),
-            ],
+          Text(
+            '$id',
+            style: const TextStyle(fontSize: 24),
           ),
-        ),
-        Expanded(
-            flex: 1,
+          SizedBox(
+            width: Dimensions.height10,
+          ),
+          Expanded(
+            flex: 2,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomButton(
-                  text: 'Update',
-                  onTap: onTapUpdate,
+                CombinedText(
+                  text1: 'Title: ',
+                  text2: title,
                 ),
-                SizedBox(
-                  height: Dimensions.height10,
-                ),
-                CustomButton(
-                  text: 'Delete',
-                  color: Colors.red.shade800,
-                  onTap: onTapDelete,
+                CombinedText(
+                  text1: 'Body: ',
+                  text2: body,
                 ),
               ],
-            )),
+            ),
+          ),
+          Expanded(
+              flex: 1,
+              child: Column(
+                children: [
+                  CustomButton(
+                    text: 'Update',
+                    onTap: onTapUpdate,
+                  ),
+                  SizedBox(
+                    height: Dimensions.height10,
+                  ),
+                  CustomButton(
+                    text: 'Delete',
+                    color: Colors.red.shade800,
+                    onTap: onTapDelete,
+                  ),
+                ],
+              )),
       ],
-    ));
+    ),
+        ));
   }
 }

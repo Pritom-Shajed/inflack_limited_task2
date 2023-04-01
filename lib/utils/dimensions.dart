@@ -8,6 +8,7 @@ class Dimensions {
   static double buttonWidth = screenWidth/4;
 
   static double radius8 = screenHeight/102;
+  static double radius10 = screenHeight/81.6;
 
 
   static double height10 = screenHeight/81.6;
