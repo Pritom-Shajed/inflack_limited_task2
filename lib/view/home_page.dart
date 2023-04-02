@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                            id: data.id!,
                            title: data.title!,
                            body: data.body!,
-                           onTapUpdate: () => Get.to(() => PatchApiPage(
+                           onTapUpdate: () => Get.to(() => UpdateApiPage(
                                apiModel: data,
                                title: data.title!,
                                body: data.body!)),

@@ -8,12 +8,12 @@ import 'package:inflack_limited_task2/model/api_model.dart';
 import 'package:inflack_limited_task2/repository/api_respository.dart';
 import 'package:inflack_limited_task2/view/home_page.dart';
 
-class PatchApiPage extends StatefulWidget {
+class UpdateApiPage extends StatefulWidget {
   String title;
   String body;
   ApiModel apiModel;
 
-  PatchApiPage(
+  UpdateApiPage(
       {Key? key,
       required this.title,
       required this.body,
@@ -21,10 +21,10 @@ class PatchApiPage extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<PatchApiPage> createState() => _PatchApiPageState();
+  State<UpdateApiPage> createState() => _UpdateApiPageState();
 }
 
-class _PatchApiPageState extends State<PatchApiPage> {
+class _UpdateApiPageState extends State<UpdateApiPage> {
   var _titleController = TextEditingController();
   var _bodyController = TextEditingController();
 

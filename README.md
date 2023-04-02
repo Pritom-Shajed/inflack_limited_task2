@@ -2,7 +2,7 @@
 
 INFLACK LIMITED TASK 2
 
-API CRUD - https://jsonplaceholder.typicode.com/posts
+API USED - https://jsonplaceholder.typicode.com/posts
 
 GET is done at Home Page using future builder..
 
